@@ -1,0 +1,23 @@
+{
+  "oauth": {
+    "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEyMzQ1Njc4OTAsInJvbGVzIjpbImFkbWluIiwicGF0aWVudCIsInJhdGVyIl0sImlkZW50aXR5IjoicGF0aWVudF9jcmltc29uIn0.jnmvTWdVGd7Qei87BCW2R9kF-GF9IeJMe0CRqACMQeE",
+    "grants": ["password", "refresh_token", "client_credentials"],
+    "tokenType": "Bearer",
+    "accessTokenExpiresAt": "3600",
+    "refreshToken": "IwOGYzYTlmM2YxOTQ5MGE3YmNmMDFkNTVk",
+    "refreshTokenExpiresAt": "3600"
+  },
+  "user-statement": {
+    "ok": true
+  },
+  "sessions": {
+    "identity": "Matt",
+    "session": "arn:aws:sns:us-east-1:838164244911:endpoint/GCM/Patient-Rater/3bfb6f4e-33e9-3194-8f79-38c06c935803"
+  },
+  "validate": {
+    "valid": true
+  },
+  "profile": {
+    "name": "typicode"
+  }
+}
