@@ -1,23 +1,76 @@
 {
-  "oauth": {
-    "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEyMzQ1Njc4OTAsInJvbGVzIjpbImFkbWluIiwicGF0aWVudCIsInJhdGVyIl0sImlkZW50aXR5IjoicGF0aWVudF9jcmltc29uIn0.jnmvTWdVGd7Qei87BCW2R9kF-GF9IeJMe0CRqACMQeE",
-    "grants": ["password", "refresh_token", "client_credentials"],
-    "tokenType": "Bearer",
-    "accessTokenExpiresAt": "3600",
-    "refreshToken": "IwOGYzYTlmM2YxOTQ5MGE3YmNmMDFkNTVk",
-    "refreshTokenExpiresAt": "3600"
-  },
-  "user-statement": {
-    "ok": true
-  },
-  "sessions": {
-    "identity": "Matt",
-    "session": "arn:aws:sns:us-east-1:838164244911:endpoint/GCM/Patient-Rater/3bfb6f4e-33e9-3194-8f79-38c06c935803"
-  },
-  "validate": {
-    "valid": true
-  },
-  "profile": {
-    "name": "typicode"
-  }
+  "visits": [
+  {
+    "id": 1,
+    "name": "Screening",
+    "patientId": 579,
+    "patient": "TEST-Site-008",
+    "currentRoomId": "1",
+    "currentRoomName": "sw_room_test_01",
+    "status": "New",
+    "confirmed": "false",
+    "activities": [
+        {
+            "id": 1,
+            "name": "SSI-4",
+            "status": "New",
+	        "confirmed": "false",
+            "rater": "Gustavo, Hansen",
+            "raterId": 1,
+            "startDate": "2020-07-27T11:30:00Z",
+            "endDate": "2020-07-27T12:00:00Z",
+	        "descriptionDate": "July 27 at 11:30 AM",
+            "mode": "Remote"
+        },
+        {
+            "id": 2,
+            "name": "CLINRO",
+            "status": "New",
+	        "confirmed": "false",
+            "rater": "Gustavo, Hansen",
+            "raterId": 1,
+            "startDate": "2020-07-27T12:00:00Z",
+            "endDate": "2020-07-27T13:00:00Z",
+	    "descriptionDate": "July 27 after SSI-4",
+            "mode": "On site"
+        }
+    ]
+},
+{
+    "id": 2,
+    "name": "Screening",
+    "patientId": 579,
+    "patient": "TEST-Site-008",
+    "currentRoomId": "1",
+    "currentRoomName": "sw_room_test_02",
+    "status": "New",
+    "confirmed": "true",
+    "activities": [
+        {
+            "id": 3,
+            "name": "SSI-4",
+            "status": "New",
+	        "confirmed": "true",
+            "rater": "Gustavo, Hansen",
+            "raterId": 1,
+            "startDate": "2020-07-27T11:30:00Z",
+            "endDate": "2020-07-27T12:00:00Z",
+	        "descriptionDate": "July 27 at 11:30 AM",
+            "mode": "Remote"
+        },
+        {
+            "id": 4,
+            "name": "CLINRO",
+            "status": "New",
+	        "confirmed": "true",
+            "rater": "Gustavo, Hansen",
+            "raterId": 1,
+            "startDate": "2020-07-27T12:00:00Z",
+            "endDate": "2020-07-27T13:00:00Z",
+	    "descriptionDate": "July 27 after SSI-4",
+            "mode": "On site"
+        }
+    ]
+}
+]
 }
